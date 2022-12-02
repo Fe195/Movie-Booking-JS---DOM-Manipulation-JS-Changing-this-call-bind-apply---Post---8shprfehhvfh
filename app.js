@@ -29,6 +29,8 @@ function createSeparateMovieTabs(data, wrapper) {
                </div>`;
      wrapper.appendChild(a);
 }
+
+
 function setEventToLinks() {
      let movieLinks = document.querySelectorAll('.movie-link');
      movieLinks.forEach(movieLink => {
@@ -59,6 +61,7 @@ function renderSeats(data) {
      booker.firstElementChild.classList.remove('v-none');
      createSeatsGrid(data)
 }
+
 function createSeatsGrid(data){
      let bookingGrid1 = document.createElement("div");
      let bookingGrid2 = document.createElement("div");
@@ -131,6 +134,7 @@ function createForm(){
      form.innerHTML = formElements;
      return form;
 }
+
 function success(){
      let submitBtn = document.getElementById('submitBtn');
      submitBtn.addEventListener('click',(e) => {
